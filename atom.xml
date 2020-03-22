@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CodeMajic</title>
+  
+  <subtitle>blogs</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://codemajic.cn/"/>
+  <updated>2020-03-14T19:30:04.969Z</updated>
+  <id>http://codemajic.cn/</id>
+  
+  <author>
+    <name>CodeMajic</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pythoncode</title>
+    <link href="http://codemajic.cn/2020/03/14/pythoncode/"/>
+    <id>http://codemajic.cn/2020/03/14/pythoncode/</id>
+    <published>2020-03-14T11:28:20.000Z</published>
+    <updated>2020-03-14T19:30:04.969Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; numpy &lt;span class=&quot;hljs-keyword&quot;&gt;as&lt;/span&gt; np
+&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="代码" scheme="http://codemajic.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+      <category term="python" scheme="http://codemajic.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First test</title>
+    <link href="http://codemajic.cn/2020/03/14/first-test/"/>
+    <id>http://codemajic.cn/2020/03/14/first-test/</id>
+    <published>2020-03-14T10:55:21.000Z</published>
+    <updated>2020-03-14T18:58:10.725Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;二级标题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#二级标题&quot;&gt;&lt;/a&gt; 二级标题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;li&gt;2&lt;/li&gt;
+&lt;li&gt;3&lt;/li&gt;
+&lt;li&gt;4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="http://codemajic.cn/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>
