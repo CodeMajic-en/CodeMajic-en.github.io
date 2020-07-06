@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>CodeMajic</title>
+  <title>Welcome to my blog!</title>
   
   <subtitle>blogs</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://codemajic.cn/"/>
-  <updated>2020-03-14T19:30:04.969Z</updated>
+  <updated>2020-07-06T13:00:37.086Z</updated>
   <id>http://codemajic.cn/</id>
   
   <author>
@@ -17,61 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>pythoncode</title>
-    <link href="http://codemajic.cn/2020/03/14/pythoncode/"/>
-    <id>http://codemajic.cn/2020/03/14/pythoncode/</id>
-    <published>2020-03-14T11:28:20.000Z</published>
-    <updated>2020-03-14T19:30:04.969Z</updated>
+    <title>RNN</title>
+    <link href="http://codemajic.cn/2020/04/09/rnn/"/>
+    <id>http://codemajic.cn/2020/04/09/rnn/</id>
+    <published>2020-04-09T06:55:21.000Z</published>
+    <updated>2020-07-06T13:00:37.086Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;p&gt;RNN 循环神经网络&lt;/p&gt;
     
     </summary>
     
     
-      <category term="代码" scheme="http://codemajic.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+      <category term="深度学习" scheme="http://codemajic.cn/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="python" scheme="http://codemajic.cn/tags/python/"/>
+      <category term="RNN" scheme="http://codemajic.cn/tags/RNN/"/>
     
   </entry>
   
   <entry>
-    <title>First test</title>
-    <link href="http://codemajic.cn/2020/03/14/first-test/"/>
-    <id>http://codemajic.cn/2020/03/14/first-test/</id>
-    <published>2020-03-14T10:55:21.000Z</published>
-    <updated>2020-03-14T18:58:10.725Z</updated>
+    <title>Language Model</title>
+    <link href="http://codemajic.cn/2020/04/08/language-model/"/>
+    <id>http://codemajic.cn/2020/04/08/language-model/</id>
+    <published>2020-04-08T04:55:21.000Z</published>
+    <updated>2020-07-06T12:57:13.190Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;二级标题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#二级标题&quot;&gt;&lt;/a&gt; 二级标题&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;1&lt;/li&gt;
-&lt;li&gt;2&lt;/li&gt;
-&lt;li&gt;3&lt;/li&gt;
-&lt;li&gt;4&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3
-        
-      
+      &lt;p&gt;这是测试阅读全文&lt;/p&gt;
     
     </summary>
     
     
+      <category term="NLP" scheme="http://codemajic.cn/categories/NLP/"/>
     
-      <category term="测试" scheme="http://codemajic.cn/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="Language Model" scheme="http://codemajic.cn/tags/Language-Model/"/>
     
   </entry>
   
