@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>code</title>
+      <link href="/2020/04/08/codetest/"/>
+      <url>/2020/04/08/codetest/</url>
+      
+        <content type="html"><![CDATA[<p>这是代码测试文章</p><a id="more"></a><pre class="highlight"><code class="python"><span class="hljs-keyword">import</span> math   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">seq_tag_score</span><span class="hljs-params">(self, feats, tags)</span>:</span>        <span class="hljs-string">""" 得到 gold_seq tag 的 score        """</span>        <span class="hljs-comment"># Gives the score of a provided tag sequence</span>       score = Var(torch.Tensor([<span class="hljs-number">0</span>]).cuda(CUDA_ID))       tags = torch.cat([torch.LongTensor([tag2ids_[START_TAG]]).cuda(CUDA_ID), tags])       <span class="hljs-keyword">for</span> i, feat <span class="hljs-keyword">in</span> enumerate(feats):            <span class="hljs-comment"># self.transitions[tags[i + 1], tags[i]] 实际得到的是从标签i到标签i+1的转移概率</span>            <span class="hljs-comment"># feat[tags[i+1]]</span>            <span class="hljs-comment"># feat 是 step i 的输出结果，有５个值，对应 B, I, E, START_TAG, END_TAG, 取对应标签的值</span>           score = score + self.transitions[tags[i + <span class="hljs-number">1</span>], tags[i]] + feat[tags[i + <span class="hljs-number">1</span>]]       score = score + self.transitions[tag2ids_[STOP_TAG], tags[<span class="hljs-number">-1</span>]]       <span class="hljs-keyword">return</span> score</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> tese </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> coding </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Language Model</title>
       <link href="/2020/04/08/language-model/"/>
       <url>/2020/04/08/language-model/</url>

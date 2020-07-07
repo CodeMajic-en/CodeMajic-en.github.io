@@ -38,6 +38,27 @@
   </entry>
   
   <entry>
+    <title>code</title>
+    <link href="http://codemajic.cn/2020/04/08/codetest/"/>
+    <id>http://codemajic.cn/2020/04/08/codetest/</id>
+    <published>2020-04-08T04:55:21.000Z</published>
+    <updated>2020-07-06T13:44:18.303Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是代码测试文章&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="tese" scheme="http://codemajic.cn/categories/tese/"/>
+    
+    
+      <category term="coding" scheme="http://codemajic.cn/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Language Model</title>
     <link href="http://codemajic.cn/2020/04/08/language-model/"/>
     <id>http://codemajic.cn/2020/04/08/language-model/</id>
