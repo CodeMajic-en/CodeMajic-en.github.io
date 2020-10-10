@@ -38,27 +38,6 @@
   </entry>
   
   <entry>
-    <title>Language Model</title>
-    <link href="http://codemajic.cn/post/36da.html"/>
-    <id>http://codemajic.cn/post/36da.html</id>
-    <published>2020-04-08T04:55:21.000Z</published>
-    <updated>2020-10-10T07:00:27.691Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是测试阅读全文&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="NLP" scheme="http://codemajic.cn/categories/NLP/"/>
-    
-    
-      <category term="Language Model" scheme="http://codemajic.cn/tags/Language-Model/"/>
-    
-  </entry>
-  
-  <entry>
     <title>code</title>
     <link href="http://codemajic.cn/post/b2c4.html"/>
     <id>http://codemajic.cn/post/b2c4.html</id>
@@ -76,6 +55,27 @@
     
     
       <category term="coding" scheme="http://codemajic.cn/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Language Model</title>
+    <link href="http://codemajic.cn/post/36da.html"/>
+    <id>http://codemajic.cn/post/36da.html</id>
+    <published>2020-04-08T04:55:21.000Z</published>
+    <updated>2020-10-10T07:00:27.691Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是测试阅读全文&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="NLP" scheme="http://codemajic.cn/categories/NLP/"/>
+    
+    
+      <category term="Language Model" scheme="http://codemajic.cn/tags/Language-Model/"/>
     
   </entry>
   
