@@ -19,9 +19,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>所有分类 - Welcome to my blog!</title>
+  <title>code - Welcome to my blog!</title>
+  
+    <meta name="keywords" content="coding">
   
 
+  
+    <meta name="description" content="这是代码测试文章">
   
 
   <!-- feed -->
@@ -428,7 +432,7 @@
     <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper category search' style="display: ;">
+        <div id="half" class='cover-wrapper post search' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
           
@@ -518,45 +522,257 @@
       <div class='body-wrapper' id="pjax-container">
         
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      <div class='post-wrapper'>
-        <article id="cat" class="post article white-box reveal shadow">
-          <h2>所有分类</h2>
-          <div class="all-cats">
-            
-              
-                <a class="" href="/categories/NLP/">
-                  <span><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;NLP</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/tese/">
-                  <span><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;tese</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                  <span><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;深度学习</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-            
-          </div>
-          <br>
+    
+    
+      <h1 class="title">
+        code
+      </h1>
+      <div class='new-meta-box'>
+        
           
-        </article>
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>CodeMajic</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/tese/">tese</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年4月8日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="code" data-path="/post/b2c4.html">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：131字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1分钟</p>
+    </a>
+  </div>
+
+
+          
+        
       </div>
     
+  </div>
+
+
   
+  <p>这是代码测试文章</p>
+<a id="more"></a>
+<pre class="highlight"><code class="python"><span class="hljs-keyword">import</span> math
+
+   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">seq_tag_score</span><span class="hljs-params">(self, feats, tags)</span>:</span>
+        <span class="hljs-string">""" 得到 gold_seq tag 的 score
+        """</span>
+        <span class="hljs-comment"># Gives the score of a provided tag sequence</span>
+       score = Var(torch.Tensor([<span class="hljs-number">0</span>]).cuda(CUDA_ID))
+       tags = torch.cat([torch.LongTensor([tag2ids_[START_TAG]]).cuda(CUDA_ID), tags])
+       <span class="hljs-keyword">for</span> i, feat <span class="hljs-keyword">in</span> enumerate(feats):
+            <span class="hljs-comment"># self.transitions[tags[i + 1], tags[i]] 实际得到的是从标签i到标签i+1的转移概率</span>
+            <span class="hljs-comment"># feat[tags[i+1]]</span>
+            <span class="hljs-comment"># feat 是 step i 的输出结果，有５个值，对应 B, I, E, START_TAG, END_TAG, 取对应标签的值</span>
+           score = score + self.transitions[tags[i + <span class="hljs-number">1</span>], tags[i]] + feat[tags[i + <span class="hljs-number">1</span>]]
+       score = score + self.transitions[tag2ids_[STOP_TAG], tags[<span class="hljs-number">-1</span>]]
+       <span class="hljs-keyword">return</span> score
+</code></pre>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://codemajic.cn/post/b2c4.html>http://codemajic.cn/post/b2c4.html</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-10T15:01:14+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年10月10日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/coding/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>coding</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://codemajic.cn/post/b2c4.html&title=code - Welcome to my blog!&summary=这是代码测试文章"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://codemajic.cn/post/b2c4.html&title=code - Welcome to my blog!&summary=这是代码测试文章"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://codemajic.cn/post/b2c4.html&title=code - Welcome to my blog!&summary=这是代码测试文章"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/post/36da.html'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Language Model</p>
+          <p class='content'>这是测试阅读全文
+
+ NLP之语言模型（Language Model）
+ 1、定义
+
+标准定义：对于语言序列w1,w2,...,wnw_1,w_2,...,w_nw1​,w2​,...,wn​语...</p>
+        </a>
+      
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -634,6 +850,7 @@
 </aside>
 
 
+
         
         
           <!--此文件用来存放一些不方便取值的变量-->
@@ -641,8 +858,8 @@
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="code";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 

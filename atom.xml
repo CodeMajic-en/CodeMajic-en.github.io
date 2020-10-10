@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://codemajic.cn/"/>
-  <updated>2020-07-06T13:00:37.086Z</updated>
+  <updated>2020-10-10T07:01:14.188Z</updated>
   <id>http://codemajic.cn/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>RNN</title>
-    <link href="http://codemajic.cn/2020/04/09/rnn/"/>
-    <id>http://codemajic.cn/2020/04/09/rnn/</id>
+    <link href="http://codemajic.cn/post/4514.html"/>
+    <id>http://codemajic.cn/post/4514.html</id>
     <published>2020-04-09T06:55:21.000Z</published>
-    <updated>2020-07-06T13:00:37.086Z</updated>
+    <updated>2020-10-10T07:01:14.188Z</updated>
     
     <summary type="html">
     
@@ -38,32 +38,11 @@
   </entry>
   
   <entry>
-    <title>code</title>
-    <link href="http://codemajic.cn/2020/04/08/codetest/"/>
-    <id>http://codemajic.cn/2020/04/08/codetest/</id>
-    <published>2020-04-08T04:55:21.000Z</published>
-    <updated>2020-07-06T13:44:18.303Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是代码测试文章&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="tese" scheme="http://codemajic.cn/categories/tese/"/>
-    
-    
-      <category term="coding" scheme="http://codemajic.cn/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Language Model</title>
-    <link href="http://codemajic.cn/2020/04/08/language-model/"/>
-    <id>http://codemajic.cn/2020/04/08/language-model/</id>
+    <link href="http://codemajic.cn/post/36da.html"/>
+    <id>http://codemajic.cn/post/36da.html</id>
     <published>2020-04-08T04:55:21.000Z</published>
-    <updated>2020-07-06T12:57:13.190Z</updated>
+    <updated>2020-10-10T07:00:27.691Z</updated>
     
     <summary type="html">
     
@@ -76,6 +55,27 @@
     
     
       <category term="Language Model" scheme="http://codemajic.cn/tags/Language-Model/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>code</title>
+    <link href="http://codemajic.cn/post/b2c4.html"/>
+    <id>http://codemajic.cn/post/b2c4.html</id>
+    <published>2020-04-08T04:55:21.000Z</published>
+    <updated>2020-10-10T07:01:14.189Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是代码测试文章&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="tese" scheme="http://codemajic.cn/categories/tese/"/>
+    
+    
+      <category term="coding" scheme="http://codemajic.cn/tags/coding/"/>
     
   </entry>
   
