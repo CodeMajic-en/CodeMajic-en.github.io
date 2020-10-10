@@ -2636,8 +2636,11 @@ div.fancybox .image-caption:empty {
     --color-meta: #888;
     --color-link: #888;
   }
-  :root:not([data-user-color-scheme]) #l_body {
-    background-color: #000 !important;
+  :root:not([data-user-color-scheme]) .backstretch {
+    background-color: #282c34 !important;
+  }
+  :root:not([data-user-color-scheme]) .backstretch-item {
+    display: none !important;
   }
   :root:not([data-user-color-scheme]) img {
     filter: brightness(70%) !important;
@@ -2783,8 +2786,11 @@ div.fancybox .image-caption:empty {
   --color-meta: #888;
   --color-link: #888;
 }
-[data-user-color-scheme='dark'] #l_body {
-  background-color: #000 !important;
+[data-user-color-scheme='dark'] .backstretch {
+  background-color: #282c34 !important;
+}
+[data-user-color-scheme='dark'] .backstretch-item {
+  display: none !important;
 }
 [data-user-color-scheme='dark'] img {
   filter: brightness(70%) !important;
