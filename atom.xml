@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://codemajic.cn/"/>
-  <updated>2020-10-10T07:01:16.000Z</updated>
+  <updated>2020-10-14T13:12:17.543Z</updated>
   <id>http://codemajic.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test_article</title>
+    <link href="http://codemajic.cn/post/9175.html"/>
+    <id>http://codemajic.cn/post/9175.html</id>
+    <published>2020-10-14T12:53:21.000Z</published>
+    <updated>2020-10-14T13:12:17.543Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div class=&quot;timeline&quot;&gt;
+&lt;div class=&quot;timenode&quot;&gt;&lt;div class=&quot;meta&quot;&gt;&lt;p&gt;&lt;p&gt;2020-10-14&lt;/p&gt;
+&lt;/p&gt;&lt;/div&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+    
+      <category term="test" scheme="http://codemajic.cn/categories/test/"/>
+    
+    
+      <category term="pic" scheme="http://codemajic.cn/tags/pic/"/>
+    
+  </entry>
   
   <entry>
     <title>RNN</title>
@@ -38,27 +67,6 @@
   </entry>
   
   <entry>
-    <title>Language Model</title>
-    <link href="http://codemajic.cn/post/36da.html"/>
-    <id>http://codemajic.cn/post/36da.html</id>
-    <published>2020-04-08T04:55:21.000Z</published>
-    <updated>2020-10-10T07:00:28.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是测试阅读全文&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="NLP" scheme="http://codemajic.cn/categories/NLP/"/>
-    
-    
-      <category term="Language Model" scheme="http://codemajic.cn/tags/Language-Model/"/>
-    
-  </entry>
-  
-  <entry>
     <title>code</title>
     <link href="http://codemajic.cn/post/b2c4.html"/>
     <id>http://codemajic.cn/post/b2c4.html</id>
@@ -76,6 +84,27 @@
     
     
       <category term="coding" scheme="http://codemajic.cn/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Language Model</title>
+    <link href="http://codemajic.cn/post/36da.html"/>
+    <id>http://codemajic.cn/post/36da.html</id>
+    <published>2020-04-08T04:55:21.000Z</published>
+    <updated>2020-10-10T07:00:28.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是测试阅读全文&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="NLP" scheme="http://codemajic.cn/categories/NLP/"/>
+    
+    
+      <category term="Language Model" scheme="http://codemajic.cn/tags/Language-Model/"/>
     
   </entry>
   
