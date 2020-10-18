@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -21,7 +19,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>分类：test - Welcome to my blog!</title>
+  <title>CSS简单使用 - Welcome to my blog!</title>
+  
+    <meta name="keywords" content="CSS">
   
 
   
@@ -468,7 +468,7 @@
     <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  featured' style="display: none;">
+        <div id="full" class='cover-wrapper post featured' style="display: none;">
           
             <div id='cover-backstretch'></div>
           
@@ -545,79 +545,320 @@
       <div class='body-wrapper' id="pjax-container">
         
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        CSS简单使用
+      </h1>
+      <div class='new-meta-box'>
         
           
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/post/9175.html">
-        test_article
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        
-2020-10-14
-1234
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>CodeMajic</p>
+  </a>
+</div>
 
-      
-    
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Web%E5%BC%80%E5%8F%91/">Web开发</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2020-10-14</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年10月16日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/test/">test</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="CSS简单使用" data-path="/post/198d.html">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：310字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1分钟</p>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  <h3 id="css"><a class="markdownIt-Anchor" href="#css"></a> CSS</h3>
+<ul>
+<li>层叠样式表单</li>
+<li>用于控制网页样式，并且和网页内容分离</li>
+</ul>
+<h4 id="html和css结合使用"><a class="markdownIt-Anchor" href="#html和css结合使用"></a> HTML和CSS结合使用</h4>
+<ul>
+<li>html中标签设置style属性，代码复用性差。</li>
+<li>在head中的style标签中定义网页中各类标签指定的样式，能够同时指定所有的同类标签样式
+<ul>
+<li>style标签中的为css内容</li>
+<li>只能在一个页面中进行复用</li>
+</ul>
+</li>
+<li>把css样式写成单独的css文件，再通过link标签引入复用即可
+<ul>
+<li>&lt;link rel=“stylesheet” type=“text/css” href=“1.css”/&gt;  引入1.css文件中写的样式</li>
+</ul>
+</li>
+</ul>
+<h4 id="css选择器"><a class="markdownIt-Anchor" href="#css选择器"></a> CSS选择器</h4>
+<ul>
+<li>标签名选择器：设置页面中指定标签的样式</li>
+</ul>
+<pre class="highlight"><code class="css"><span class="hljs-selector-tag">div</span> {
+	<span class="hljs-attribute">property</span>: value
+}
+</code></pre>
+<ul>
+<li>id选择器：可以让我们通过id属性选择使用样式
+<ul>
+<li>通过在页面中标签的id属性指定使用的样式</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="CSS"><span class="hljs-selector-id">#id001</span>{
+    <span class="hljs-attribute">property</span>: value
+}
+</code></pre>
+<ul>
+<li>class（类）选择器：标签通过class属性选择样式</li>
+</ul>
+<pre class="highlight"><code class="CSS"><span class="hljs-selector-class">.class01</span>{
+    <span class="hljs-attribute">property</span>: value
+}
+</code></pre>
+<ul>
+<li>组合选择器：可以上多个选择器共用一个代码
+<ul>
+<li>使用逗号分开</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="CSS"><span class="hljs-selector-class">.class01</span>,<span class="hljs-selector-id">#id01</span>{
+    <span class="hljs-attribute">property</span>: value
+}
+</code></pre>
+<h4 id="常用样式"><a class="markdownIt-Anchor" href="#常用样式"></a> 常用样式</h4>
+<ul>
+<li>color：指定字体颜色</li>
+<li>border：指定标签边框相关属性</li>
+<li>width：宽度</li>
+<li>height：高度</li>
+<li>background-color：背景颜色</li>
+<li>font-size：字体大小</li>
+<li>text-align：设置文字对齐方式</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/post/9175.html'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://codemajic.cn/post/198d.html>http://codemajic.cn/post/198d.html</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-18T22:17:35+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年10月18日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CSS/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>CSS</p></a></div>
 
 
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://codemajic.cn/post/198d.html&title=CSS简单使用 - Welcome to my blog!&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://codemajic.cn/post/198d.html&title=CSS简单使用 - Welcome to my blog!&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://codemajic.cn/post/198d.html&title=CSS简单使用 - Welcome to my blog!&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/post/a17a.html'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>JS用法小记</p>
+          <p class='content'> JavaScript
+
+动态网站
+弱类型语言：变量类型可变
+
+ html和JS结合使用
+
+使用script标签内嵌JS代码，当前为标签内定义js代码
+JS单独文件提高复用性，进行使用，当前为使...</p>
+        </a>
+      
+      
+        <a class='next' href='/post/d562.html'>
+          <p class='title'>HTML简单使用<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'> HTML
+ html标签
+标签名大小写不敏感，且分为单标签和双标签，标签需要正确闭合
+标签属性必须&quot; &quot;内赋值
+
+&lt;br /&gt;：换行标签
+&lt;hr /&gt...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -625,262 +866,28 @@
     
     
 
-<section class="widget text shadow desktop mobile">
-  
-  <header>
-    
-      <i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i><span class='name'>公告</span>
-    
-  </header>
 
 
-  <div class='content'>
-    
-      <p>这里是本站公告!信息发布处</p>
-
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/tese/" href="/categories/tese/"
-            id="categoriestese"
-            ><div class='name'>tese</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/test/" href="/categories/test/"
-            id="categoriestest"
-            ><div class='name'>test</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/" href="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/"
-            id="categoriesE4B8AAE4BABAE8AEB0E5BD95"
-            ><div class='name'>个人记录</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-text"> CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#html和css结合使用"><span class="toc-text"> HTML和CSS结合使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#css选择器"><span class="toc-text"> CSS选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常用样式"><span class="toc-text"> 常用样式</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/coding/" style="font-size: 14px; color: #999">coding</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/pic/" style="font-size: 14px; color: #999">pic</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget list shadow desktop mobile">
-  
-  <header>
-    
-      <a href='/wiki/'><i class="fas fa-chevron-left fa-fw" aria-hidden="true"></i><span class='name'>Hexo Themes</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation">
-      
-        <li><a class="flat-box" title="/wiki/volantis/" href="/wiki/volantis/"
-          
-          
-          id="wikivolantis"
-          >
-          <div class='name'>
-            
-            Volantis for Hexo
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="/wiki/resume/" href="/wiki/resume/"
-          
-          
-          id="wikiresume"
-          >
-          <div class='name'>
-            
-            Resume for Hexo
-          </div>
-          
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>3 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/01/01'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>396 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Sun Oct 18 2020 21:42:37 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2020-10-18 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2020-10-18 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
 
   
 
 
 </aside>
+
 
 
         
@@ -890,8 +897,8 @@
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="CSS简单使用";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 

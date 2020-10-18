@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>JS用法小记</title>
+      <link href="post/a17a.html"/>
+      <url>post/a17a.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="javascript"><a class="markdownIt-Anchor" href="#javascript"></a> JavaScript</h3><ul><li>动态网站</li><li>弱类型语言：变量类型可变</li></ul><h4 id="html和js结合使用"><a class="markdownIt-Anchor" href="#html和js结合使用"></a> html和JS结合使用</h4><ul><li>使用script标签内嵌JS代码，当前为标签内定义js代码</li><li>JS单独文件提高复用性，进行使用，当前为使用标签引入js文件<ul><li>src属性指定JS文件路径</li></ul></li></ul><h4 id="语法规则"><a class="markdownIt-Anchor" href="#语法规则"></a> 语法规则</h4><ul><li><p>var name：定义变量，弱类型，无需指定变量类型</p></li><li><p>alert()：控制台警告提示</p></li><li><p>关系运算：</p><ul><li>==：比较变量内容是否相同，内容相同就位true</li><li>===：比较变量内容和类型是否都相同</li></ul></li><li><p>逻辑运算，JS中所有的变量都可以作为boolean类型去使用，0、null、undefined、“”都为false</p><ul><li>&amp;&amp;：且运算<ul><li>当表达式全为true，返回最后一个表达式的值</li><li>当表达式存在false，返回第一个为假的值</li></ul></li><li>||：或运算<ul><li>当表达式都为false，返回最后一个表达式的值</li><li>只要有一个表达式的值为真，返回第一个为真的值</li></ul></li><li>！：取反运算</li></ul></li><li><p>数组：！！！，动态扩充</p><ul><li>var 数组名 = []，定义空数组</li><li>var 数组名 = [1,‘abc’,true]， 定义数组同时赋值</li><li>array.length：读取数组的长度</li></ul></li></ul><pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = []  # 定义空数组arr[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>   # 通过下标动态扩容arr[<span class="hljs-number">2</span>] = <span class="hljs-number">3</span>  # 指定下标赋值，跳过的元素默认为undefine<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;arr.length;i++){  # 遍历数组内容    alert(arr[i]);}</code></pre><ul><li>函数：！！！<ul><li>function关键字定义函数：function name(形参列表){}，因为是弱类型，形参无需指定类型。</li><li>var name = function(形参列表){函数体}：第二种定义方式</li><li>不允许函数重载，会覆盖上次定义</li><li>arguments隐形参数:将函数参数以该变量数组形式引用<ul><li>arguments.length:参数个数</li><li>arguments[i]:第i个参数</li></ul></li></ul></li><li>自定义对象:object对象和{}创建对象</li></ul><pre class="highlight"><code class="javascript"># 创建<span class="hljs-built_in">Object</span>对象<span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>()  # 定义<span class="hljs-built_in">Object</span>对象obj.name = <span class="hljs-string">"John"</span>  # 定义name属性obj.age = <span class="hljs-string">"18"</span>  # 定义age属性obj.fun = funtion(){  # 定义对象的函数  alert(<span class="hljs-string">"hello John!"</span>)}</code></pre><pre class="highlight"><code class="javascript"># 使用{}创建对象<span class="hljs-keyword">var</span> obj = {}  # 创建空对象<span class="hljs-keyword">var</span> obj1 = {  <span class="hljs-attr">name</span>: value,  <span class="hljs-attr">name1</span>:value1,  <span class="hljs-attr">func</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}}# 采用相同方式引用对象属性和方法</code></pre><ul><li>JS中的事件:电脑输入设备和页面进行交互的响应称之为事件.<ul><li>onload:加载完成事件,常用于页面js代码初始化操作</li><li>onclick:单击时间,用于按钮的点击响应操作</li><li>onblur:失去焦点事件,常用于输入框失去焦点验证输入内容是否合法</li><li>onchange:内容发送改变事件,</li><li>onsubmit:表单提交事件,常用于表单提交前验证表单项是否合法</li></ul></li></ul><h4 id="变量类型"><a class="markdownIt-Anchor" href="#变量类型"></a> 变量类型</h4><ul><li><p>变量定义：var name</p></li><li><p>number：数值类型</p></li><li><p>string：字符串</p></li><li><p>object：对象类型</p></li><li><p>boolean：布尔类型</p></li><li><p>function：函数类型</p></li></ul><h4 id="特殊值"><a class="markdownIt-Anchor" href="#特殊值"></a> 特殊值</h4><ul><li>undefined：未定义，未赋初始值变量都为未定义</li><li>null：空值</li><li>NAN：非数值</li></ul><h4 id="事件的注册绑定"><a class="markdownIt-Anchor" href="#事件的注册绑定"></a> 事件的注册(绑定)</h4><p>​告诉浏览器当事件响应后要执行那些操作代码,叫事件注册或绑定,分为静态和动态.</p><ul><li>静态注册事件:通过html的事件属性赋予事件响应后的代码</li><li>动态注册事件:先通过js代码得到标签的dom对象,在通过dom对象.事件名=function(){}形式赋于事件响应后的代码,叫动态注册,基本步骤如下:<ul><li>获取标签对象</li><li>标签对象.事件名=function(){}</li></ul></li><li>onload事件<ul><li>静态注册:浏览器解析完网站后自动执行的操作,在标签的onload属性中编写操作代码或者引入JS功能函数.</li><li>动态事件</li></ul></li></ul><pre class="highlight"><code class="javascript">&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt; <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onloadFunc</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 用于标签中的事件标签使用</span>  alert(<span class="hljs-string">"hello"</span>);}<span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 动态事件自动加载</span>    alert(<span class="hljs-string">"hello"</span>);  }&lt;<span class="hljs-regexp">/script&gt;</span></code></pre><ul><li>onclick事件<ul><li>静态事件:设置标签中onclick属性需要的操作</li><li>动态事件,获取对象后设置对象事件名需要的操作</li></ul></li></ul><pre class="highlight"><code class="javascript">&lt;script&gt;  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onloadFunc</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 供静态事件使用的功能,只需在对应事件标签指定</span>  alert(<span class="hljs-string">"hello"</span>);}  <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{    <span class="hljs-keyword">var</span> btn = <span class="hljs-built_in">document</span>.getElemById(<span class="hljs-string">"btn01"</span>);  <span class="hljs-comment">// 根据标签id取得对象</span>    btn.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 指定对象对应事件的反应</span>      alert(<span class="hljs-string">"hello"</span>);    }  }&lt;<span class="hljs-regexp">/script&gt;</span></code></pre><ul><li>onblur事件：失去焦点事件<ul><li>静态注册：在标签的onblur属性中应用JS函数</li><li>动态注册</li></ul></li></ul><pre class="highlight"><code class="javascript">&lt;head&gt;    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func1</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//静态时间注册功能函数</span>            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"用户名输入框失去焦点！"</span>);        }        <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 动态事件根据id获取后进行功能编写</span>            pass = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"pass"</span>)            pass.onblur = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"password loss focus!"</span>)            }        }        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span>&lt;body&gt;用户名:&lt;input onblur="func1()"&gt;  //静态方法密码:&lt;input id="pass"&gt;  //动态事件设置id</code></pre><ul><li>onchange事件：常用语下拉框内容改变<ul><li>静态事件注册</li><li>动态事件注册</li></ul></li><li>onsubmit事件：表单提交事件，常用于验证所有表单项是否合法<ul><li>“return false”：可以阻止表单提交</li></ul></li></ul><pre class="highlight"><code class="javascript">&lt;head&gt;    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func1</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//验证合理数据，需要在onsubmit标签中使用return funcname</span>            alert(<span class="hljs-string">"表单提交！"</span>)            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>        }        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func2</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//设置返回值，决定当前提交是否完成</span>            alert(<span class="hljs-string">"表单提交失败，存在不合法数据！"</span>)            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>        }        <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//动态事件、设置返回值，决定当前提交是否完成</span>            <span class="hljs-keyword">var</span> form = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"form1"</span>);            form.onsubmit = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{                alert(<span class="hljs-string">"表单提交失败！"</span>)                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>            }        }      </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span>&lt;body&gt;&lt;form action="http://localhost:8080" method="get" onsubmit="return func1()"&gt;    &lt;input type="submit" value="静态注册"&gt;&lt;/form&gt;&lt;br/&gt;&lt;form action="http://localhost:8080" method="get" id="form1"&gt;    &lt;input type="submit" value="动态注册"&gt;&lt;/form&gt;</code></pre><h4 id="dom模型文档对象模型"><a class="markdownIt-Anchor" href="#dom模型文档对象模型"></a> DOM模型（文档对象模型）</h4><p>​将文档中的标签、属性、文本转换成对象来管理</p><p>​<strong>优先使用id、其次name最后是标签</strong>且需要在页面加载完成之后进行查询</p><ul><li>document.getElementById(elementId)：通过标签中的id属性获得该标签对象，存在多个相同id返回第一个</li></ul><p>实例：验证用户名是否合法，使用正则表达式匹配，并且在输入框右边使用文字进行显示。</p><p><a href="./data/username-check.html">源码</a></p><ul><li>document.getElementsByName(elementName)：返回所有name为指定值的标签对象数组，顺序为在html页面中的顺序</li></ul><p>实例：对于一组选择框，设计全选，全不选和反选按钮，并且实现相关功能，并且检查最终提交是否至少选择一项。</p><p><a href="./data/select.html">源码</a></p><ul><li>document.getElementsByTagName(tagname)：根据标签名返回标签对象集合，集合中都为dom对象，元素顺序为html页面中出现的顺序</li><li>document.createElement(&quot;&quot;)：创建标签</li></ul><h4 id="节点常用的属性和方法dom数的操作方法"><a class="markdownIt-Anchor" href="#节点常用的属性和方法dom数的操作方法"></a> 节点常用的属性和方法（DOM数的操作方法）</h4><ul><li>childNodes：获取当前节点的所有子节点</li><li>firstChild：当前节点的第一个子节点对象</li><li>innerHTML：设置标签对象之间的内容</li><li>appendChild：给指定标签添加子节点</li></ul><p>实例：通过JS代码在页面加载完成之后添加标签以及适当的内容</p><p><a href="./data/generate.html">源码</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS简单使用</title>
+      <link href="post/198d.html"/>
+      <url>post/198d.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="css"><a class="markdownIt-Anchor" href="#css"></a> CSS</h3><ul><li>层叠样式表单</li><li>用于控制网页样式，并且和网页内容分离</li></ul><h4 id="html和css结合使用"><a class="markdownIt-Anchor" href="#html和css结合使用"></a> HTML和CSS结合使用</h4><ul><li>html中标签设置style属性，代码复用性差。</li><li>在head中的style标签中定义网页中各类标签指定的样式，能够同时指定所有的同类标签样式<ul><li>style标签中的为css内容</li><li>只能在一个页面中进行复用</li></ul></li><li>把css样式写成单独的css文件，再通过link标签引入复用即可<ul><li>&lt;link rel=“stylesheet” type=“text/css” href=“1.css”/&gt;  引入1.css文件中写的样式</li></ul></li></ul><h4 id="css选择器"><a class="markdownIt-Anchor" href="#css选择器"></a> CSS选择器</h4><ul><li>标签名选择器：设置页面中指定标签的样式</li></ul><pre class="highlight"><code class="css"><span class="hljs-selector-tag">div</span> {<span class="hljs-attribute">property</span>: value}</code></pre><ul><li>id选择器：可以让我们通过id属性选择使用样式<ul><li>通过在页面中标签的id属性指定使用的样式</li></ul></li></ul><pre class="highlight"><code class="CSS"><span class="hljs-selector-id">#id001</span>{    <span class="hljs-attribute">property</span>: value}</code></pre><ul><li>class（类）选择器：标签通过class属性选择样式</li></ul><pre class="highlight"><code class="CSS"><span class="hljs-selector-class">.class01</span>{    <span class="hljs-attribute">property</span>: value}</code></pre><ul><li>组合选择器：可以上多个选择器共用一个代码<ul><li>使用逗号分开</li></ul></li></ul><pre class="highlight"><code class="CSS"><span class="hljs-selector-class">.class01</span>,<span class="hljs-selector-id">#id01</span>{    <span class="hljs-attribute">property</span>: value}</code></pre><h4 id="常用样式"><a class="markdownIt-Anchor" href="#常用样式"></a> 常用样式</h4><ul><li>color：指定字体颜色</li><li>border：指定标签边框相关属性</li><li>width：宽度</li><li>height：高度</li><li>background-color：背景颜色</li><li>font-size：字体大小</li><li>text-align：设置文字对齐方式</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML简单使用</title>
+      <link href="post/d562.html"/>
+      <url>post/d562.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="html"><a class="markdownIt-Anchor" href="#html"></a> HTML</h3><h4 id="html标签"><a class="markdownIt-Anchor" href="#html标签"></a> html标签</h4><p>标签名大小写不敏感，且分为单标签和双标签，标签需要正确闭合</p><p>标签属性必须&quot; &quot;内赋值</p><ul><li>&lt;br /&gt;：换行标签</li><li>&lt;hr /&gt;：水平线</li><li>&lt;font&gt;：字体标签用于修改字体的各项属性<ul><li>color：指定颜色</li><li>face：指定字体</li><li>size：指定字体大小</li></ul></li><li>特殊字符：对于带&lt;&gt;的内容会直接解释成html语言，需要使用特殊标签让标签打印在网页上<ul><li>&lt;：&amp;lt;</li><li>&gt;：&amp;gt;</li><li>空格：&amp;nbsp;</li></ul></li><li>标题标签：h1~h6<ul><li>align：设置对齐方式，默认左对齐</li></ul></li><li>&lt;a&gt;：超链接标签<ul><li>href：设置跳转地址</li><li>target：设置跳转链接本标签页打开还是新标签页打开，默认为当前页打开</li></ul></li><li>&lt;ul&gt;：无序列表（ol为有序列表）<ul><li>&lt;li&gt;设置列表项</li><li>type：设置列表项前面符号</li></ul></li><li>&lt;img&gt;：显示图片标签<ul><li>src：设置图片路径，区分相对路径和绝对路径</li><li>width：设置宽度</li><li>height：设置高度</li><li>border：边框效果</li><li>alt：设定当路径不正确时，默认显示的内容</li></ul></li><li>&lt;table&gt;：表格标签&lt;tr&gt;设置行数量&lt;td&gt;设置行中的列数量，嵌套定义<ul><li>&lt;tr&gt;：行标签</li><li>&lt;td&gt;：单元格标签，同时可以指定单元格文本对齐方式</li><li>&lt;th&gt;：表头标签</li><li>border：设置表格边框</li><li>width、height：设置宽高</li><li>align：设置表格相对于页面的对齐方式</li><li>cellspacing：设置单元格间距</li></ul></li><li>&lt;iframe&gt;：在页面中打开小窗口，加载单独的页面<ul><li>src：指定单独显示的页面地址</li><li>width、height：指定小区域的宽度和高度</li><li>和&lt;a&gt;标签混合使用，设置点击超链接在ifame窗口中加载，步骤如下：<ul><li>&lt;iframe&gt;：设置name属性定义名称</li><li>&lt;a&gt;：标签中的target属性指定为iframe的name值</li></ul></li></ul></li><li>&lt;form&gt;：表单标签，用于在网页中收集用户数据<ul><li>action：设置提交的服务器地址</li><li>method：设置提交的方式，默认为get<ul><li>GET特点：浏览器中的地址是action属性+？+请求参数，格式为name=value&amp;password，不安全。</li><li>POST特点：浏览器中地址只有action属性，相对安全，理论上没有数据长度的限制</li></ul></li><li>数据提交时，数据没有发送给服务器的三种情况<ul><li>表单项没有name属性值</li><li>单选、复选（下拉列表中的option标签）都需要添加value属性，以便发送给服务器</li><li>表单项不在提交的form标签中</li></ul></li><li>使用表格存储表单内容能够布局更加整齐</li><li>&lt;input&gt;：<ul><li>type=“text”：文本输入，value设置输入框中的默认值</li><li>type=“password”：密码输入框，value设置输入框中的默认值</li><li>type=“radio”：单选框，name属性进行分组，checked=&quot;checked&quot;表示默认选中</li><li>type=“checkbox”：复选框，checked=&quot;checked&quot;表示默认选中</li><li>type=“reset”：重置选项，value属性修改按钮上的文本</li><li>type=“submit”：提交按钮，value属性修改按钮上的文本</li><li>type=“button”：按钮，value属性修改按钮上的文本</li><li>type=“file”：文件上传域</li><li>type=“hidden”：隐藏域，无需用户参与，且需要在提交服务器时的内容</li></ul></li><li>&lt;select&gt;：下拉列表框，子标签&lt;option&gt;设置下拉框内容，子标签的select=“selected”设置下拉框默认选项</li><li>&lt;textarea&gt;：多行文本输入框<ul><li>rows：指定可以显示多少行</li><li>cols：设置每行显示多少字符宽度</li><li>标签之间内容指定默认值</li></ul></li></ul></li><li>&lt;div&gt;：内容默认独占一行</li><li>&lt;span&gt;：长度是封装数据的长度</li><li>&lt;p&gt;：默认会在段落的上方或者下方空出一行（已有不再空）</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello hexo,hello world!</title>
       <link href="post/95d1.html"/>
       <url>post/95d1.html</url>
@@ -21,56 +96,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test_article</title>
-      <link href="post/9175.html"/>
-      <url>post/9175.html</url>
-      
-        <content type="html"><![CDATA[<div class="timeline"><div class="timenode"><div class="meta"><p><p>2020-10-14</p></p></div><div class="body"><ul><li>1</li><li>2</li><li>3</li><li>4</li></ul></div></div></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> test </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> pic </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>code</title>
-      <link href="post/b2c4.html"/>
-      <url>post/b2c4.html</url>
-      
-        <content type="html"><![CDATA[<p>这是代码测试文章</p><a id="more"></a><pre class="highlight"><code class="python"><span class="hljs-keyword">import</span> math   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">seq_tag_score</span><span class="hljs-params">(self, feats, tags)</span>:</span>        <span class="hljs-string">""" 得到 gold_seq tag 的 score        """</span>        <span class="hljs-comment"># Gives the score of a provided tag sequence</span>       score = Var(torch.Tensor([<span class="hljs-number">0</span>]).cuda(CUDA_ID))       tags = torch.cat([torch.LongTensor([tag2ids_[START_TAG]]).cuda(CUDA_ID), tags])       <span class="hljs-keyword">for</span> i, feat <span class="hljs-keyword">in</span> enumerate(feats):            <span class="hljs-comment"># self.transitions[tags[i + 1], tags[i]] 实际得到的是从标签i到标签i+1的转移概率</span>            <span class="hljs-comment"># feat[tags[i+1]]</span>            <span class="hljs-comment"># feat 是 step i 的输出结果，有５个值，对应 B, I, E, START_TAG, END_TAG, 取对应标签的值</span>           score = score + self.transitions[tags[i + <span class="hljs-number">1</span>], tags[i]] + feat[tags[i + <span class="hljs-number">1</span>]]       score = score + self.transitions[tag2ids_[STOP_TAG], tags[<span class="hljs-number">-1</span>]]       <span class="hljs-keyword">return</span> score</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> tese </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> coding </tag>
             
         </tags>
       

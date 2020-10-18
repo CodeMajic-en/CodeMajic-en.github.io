@@ -19,13 +19,11 @@
 
   <!-- 页面元数据 -->
   
-  <title>code - Welcome to my blog!</title>
+  <title>JS用法小记 - Welcome to my blog!</title>
   
-    <meta name="keywords" content="coding">
+    <meta name="keywords" content="Javascript">
   
 
-  
-    <meta name="description" content="这是代码测试文章">
   
 
   <!-- feed -->
@@ -558,7 +556,7 @@
     
     
       <h1 class="title">
-        code
+        JS用法小记
       </h1>
       <div class='new-meta-box'>
         
@@ -578,7 +576,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/tese/">tese</a>
+      <a class="category-link" href="/categories/Web%E5%BC%80%E5%8F%91/">Web开发</a>
     </a>
   </div>
 
@@ -589,7 +587,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年4月8日</p>
+    <p>发布于：2020年10月18日</p>
   </a>
 </div>
 
@@ -600,7 +598,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="code" data-path="/post/b2c4.html">
+      <div id="lc-pv" data-title="JS用法小记" data-path="/post/a17a.html">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -616,13 +614,13 @@
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：131字</p>
+      <p>字数：1.8k字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1分钟</p>
+      <p>时长：6分钟</p>
     </a>
   </div>
 
@@ -635,24 +633,285 @@
 
 
   
-  <p>这是代码测试文章</p>
-<a id="more"></a>
-<pre class="highlight"><code class="python"><span class="hljs-keyword">import</span> math
-
-   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">seq_tag_score</span><span class="hljs-params">(self, feats, tags)</span>:</span>
-        <span class="hljs-string">""" 得到 gold_seq tag 的 score
-        """</span>
-        <span class="hljs-comment"># Gives the score of a provided tag sequence</span>
-       score = Var(torch.Tensor([<span class="hljs-number">0</span>]).cuda(CUDA_ID))
-       tags = torch.cat([torch.LongTensor([tag2ids_[START_TAG]]).cuda(CUDA_ID), tags])
-       <span class="hljs-keyword">for</span> i, feat <span class="hljs-keyword">in</span> enumerate(feats):
-            <span class="hljs-comment"># self.transitions[tags[i + 1], tags[i]] 实际得到的是从标签i到标签i+1的转移概率</span>
-            <span class="hljs-comment"># feat[tags[i+1]]</span>
-            <span class="hljs-comment"># feat 是 step i 的输出结果，有５个值，对应 B, I, E, START_TAG, END_TAG, 取对应标签的值</span>
-           score = score + self.transitions[tags[i + <span class="hljs-number">1</span>], tags[i]] + feat[tags[i + <span class="hljs-number">1</span>]]
-       score = score + self.transitions[tag2ids_[STOP_TAG], tags[<span class="hljs-number">-1</span>]]
-       <span class="hljs-keyword">return</span> score
+  <h3 id="javascript"><a class="markdownIt-Anchor" href="#javascript"></a> JavaScript</h3>
+<ul>
+<li>动态网站</li>
+<li>弱类型语言：变量类型可变</li>
+</ul>
+<h4 id="html和js结合使用"><a class="markdownIt-Anchor" href="#html和js结合使用"></a> html和JS结合使用</h4>
+<ul>
+<li>使用script标签内嵌JS代码，当前为标签内定义js代码</li>
+<li>JS单独文件提高复用性，进行使用，当前为使用标签引入js文件
+<ul>
+<li>src属性指定JS文件路径</li>
+</ul>
+</li>
+</ul>
+<h4 id="语法规则"><a class="markdownIt-Anchor" href="#语法规则"></a> 语法规则</h4>
+<ul>
+<li>
+<p>var name：定义变量，弱类型，无需指定变量类型</p>
+</li>
+<li>
+<p>alert()：控制台警告提示</p>
+</li>
+<li>
+<p>关系运算：</p>
+<ul>
+<li>==：比较变量内容是否相同，内容相同就位true</li>
+<li>===：比较变量内容和类型是否都相同</li>
+</ul>
+</li>
+<li>
+<p>逻辑运算，JS中所有的变量都可以作为boolean类型去使用，0、null、undefined、“”都为false</p>
+<ul>
+<li>&amp;&amp;：且运算
+<ul>
+<li>当表达式全为true，返回最后一个表达式的值</li>
+<li>当表达式存在false，返回第一个为假的值</li>
+</ul>
+</li>
+<li>||：或运算
+<ul>
+<li>当表达式都为false，返回最后一个表达式的值</li>
+<li>只要有一个表达式的值为真，返回第一个为真的值</li>
+</ul>
+</li>
+<li>！：取反运算</li>
+</ul>
+</li>
+<li>
+<p>数组：！！！，动态扩充</p>
+<ul>
+<li>var 数组名 = []，定义空数组</li>
+<li>var 数组名 = [1,‘abc’,true]， 定义数组同时赋值</li>
+<li>array.length：读取数组的长度</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = []  # 定义空数组
+arr[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>   # 通过下标动态扩容
+arr[<span class="hljs-number">2</span>] = <span class="hljs-number">3</span>  # 指定下标赋值，跳过的元素默认为undefine
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;arr.length;i++){  # 遍历数组内容
+    alert(arr[i]);
+}
 </code></pre>
+<ul>
+<li>函数：！！！
+<ul>
+<li>function关键字定义函数：function name(形参列表){}，因为是弱类型，形参无需指定类型。</li>
+<li>var name = function(形参列表){函数体}：第二种定义方式</li>
+<li>不允许函数重载，会覆盖上次定义</li>
+<li>arguments隐形参数:将函数参数以该变量数组形式引用
+<ul>
+<li>arguments.length:参数个数</li>
+<li>arguments[i]:第i个参数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自定义对象:object对象和{}创建对象</li>
+</ul>
+<pre class="highlight"><code class="javascript"># 创建<span class="hljs-built_in">Object</span>对象
+<span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>()  # 定义<span class="hljs-built_in">Object</span>对象
+obj.name = <span class="hljs-string">"John"</span>  # 定义name属性
+obj.age = <span class="hljs-string">"18"</span>  # 定义age属性
+obj.fun = funtion(){  # 定义对象的函数
+  alert(<span class="hljs-string">"hello John!"</span>)
+}
+
+</code></pre>
+<pre class="highlight"><code class="javascript"># 使用{}创建对象
+<span class="hljs-keyword">var</span> obj = {}  # 创建空对象
+<span class="hljs-keyword">var</span> obj1 = {
+  <span class="hljs-attr">name</span>: value,
+  <span class="hljs-attr">name1</span>:value1,
+  <span class="hljs-attr">func</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}
+}
+# 采用相同方式引用对象属性和方法
+</code></pre>
+<ul>
+<li>JS中的事件:电脑输入设备和页面进行交互的响应称之为事件.
+<ul>
+<li>onload:加载完成事件,常用于页面js代码初始化操作</li>
+<li>onclick:单击时间,用于按钮的点击响应操作</li>
+<li>onblur:失去焦点事件,常用于输入框失去焦点验证输入内容是否合法</li>
+<li>onchange:内容发送改变事件,</li>
+<li>onsubmit:表单提交事件,常用于表单提交前验证表单项是否合法</li>
+</ul>
+</li>
+</ul>
+<h4 id="变量类型"><a class="markdownIt-Anchor" href="#变量类型"></a> 变量类型</h4>
+<ul>
+<li>
+<p>变量定义：var name</p>
+</li>
+<li>
+<p>number：数值类型</p>
+</li>
+<li>
+<p>string：字符串</p>
+</li>
+<li>
+<p>object：对象类型</p>
+</li>
+<li>
+<p>boolean：布尔类型</p>
+</li>
+<li>
+<p>function：函数类型</p>
+</li>
+</ul>
+<h4 id="特殊值"><a class="markdownIt-Anchor" href="#特殊值"></a> 特殊值</h4>
+<ul>
+<li>undefined：未定义，未赋初始值变量都为未定义</li>
+<li>null：空值</li>
+<li>NAN：非数值</li>
+</ul>
+<h4 id="事件的注册绑定"><a class="markdownIt-Anchor" href="#事件的注册绑定"></a> 事件的注册(绑定)</h4>
+<p>​	告诉浏览器当事件响应后要执行那些操作代码,叫事件注册或绑定,分为静态和动态.</p>
+<ul>
+<li>静态注册事件:通过html的事件属性赋予事件响应后的代码</li>
+<li>动态注册事件:先通过js代码得到标签的dom对象,在通过dom对象.事件名=function(){}形式赋于事件响应后的代码,叫动态注册,基本步骤如下:
+<ul>
+<li>获取标签对象</li>
+<li>标签对象.事件名=function(){}</li>
+</ul>
+</li>
+<li>onload事件
+<ul>
+<li>静态注册:浏览器解析完网站后自动执行的操作,在标签的onload属性中编写操作代码或者引入JS功能函数.</li>
+<li>动态事件</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="javascript">&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+ 	<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onloadFunc</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 用于标签中的事件标签使用</span>
+  	alert(<span class="hljs-string">"hello"</span>);
+	}
+	<span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 动态事件自动加载</span>
+    alert(<span class="hljs-string">"hello"</span>);
+  }
+&lt;<span class="hljs-regexp">/script&gt;
+</span></code></pre>
+<ul>
+<li>onclick事件
+<ul>
+<li>静态事件:设置标签中onclick属性需要的操作</li>
+<li>动态事件,获取对象后设置对象事件名需要的操作</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="javascript">&lt;script&gt;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onloadFunc</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 供静态事件使用的功能,只需在对应事件标签指定</span>
+  	alert(<span class="hljs-string">"hello"</span>);
+	}
+  <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> btn = <span class="hljs-built_in">document</span>.getElemById(<span class="hljs-string">"btn01"</span>);  <span class="hljs-comment">// 根据标签id取得对象</span>
+    btn.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 指定对象对应事件的反应</span>
+      alert(<span class="hljs-string">"hello"</span>);
+    }
+  }
+&lt;<span class="hljs-regexp">/script&gt;
+</span></code></pre>
+<ul>
+<li>onblur事件：失去焦点事件
+<ul>
+<li>静态注册：在标签的onblur属性中应用JS函数</li>
+<li>动态注册</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="javascript">&lt;head&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func1</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//静态时间注册功能函数</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"用户名输入框失去焦点！"</span>);
+        }
+
+        <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">// 动态事件根据id获取后进行功能编写</span>
+            pass = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"pass"</span>)
+            pass.onblur = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"password loss focus!"</span>)
+            }
+        }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span>
+&lt;body&gt;
+用户名:&lt;input onblur="func1()"&gt;  //静态方法
+密码:&lt;input id="pass"&gt;  //动态事件设置id
+</code></pre>
+<ul>
+<li>onchange事件：常用语下拉框内容改变
+<ul>
+<li>静态事件注册</li>
+<li>动态事件注册</li>
+</ul>
+</li>
+<li>onsubmit事件：表单提交事件，常用于验证所有表单项是否合法
+<ul>
+<li>“return false”：可以阻止表单提交</li>
+</ul>
+</li>
+</ul>
+<pre class="highlight"><code class="javascript">&lt;head&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func1</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//验证合理数据，需要在onsubmit标签中使用return funcname</span>
+            alert(<span class="hljs-string">"表单提交！"</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func2</span>(<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//设置返回值，决定当前提交是否完成</span>
+            alert(<span class="hljs-string">"表单提交失败，存在不合法数据！"</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+        }
+        <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{  <span class="hljs-comment">//动态事件、设置返回值，决定当前提交是否完成</span>
+            <span class="hljs-keyword">var</span> form = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"form1"</span>);
+            form.onsubmit = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{
+                alert(<span class="hljs-string">"表单提交失败！"</span>)
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+            }
+        }  
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span>
+&lt;body&gt;
+&lt;form action="http://localhost:8080" method="get" onsubmit="return func1()"&gt;
+    &lt;input type="submit" value="静态注册"&gt;
+&lt;/form&gt;
+&lt;br/&gt;
+&lt;form action="http://localhost:8080" method="get" id="form1"&gt;
+    &lt;input type="submit" value="动态注册"&gt;
+&lt;/form&gt;
+</code></pre>
+<h4 id="dom模型文档对象模型"><a class="markdownIt-Anchor" href="#dom模型文档对象模型"></a> DOM模型（文档对象模型）</h4>
+<p>​	将文档中的标签、属性、文本转换成对象来管理</p>
+<p>​	<strong>优先使用id、其次name最后是标签</strong>且需要在页面加载完成之后进行查询</p>
+<ul>
+<li>document.getElementById(elementId)：通过标签中的id属性获得该标签对象，存在多个相同id返回第一个</li>
+</ul>
+<p>实例：验证用户名是否合法，使用正则表达式匹配，并且在输入框右边使用文字进行显示。</p>
+<p><a href="./data/username-check.html">源码</a></p>
+<ul>
+<li>document.getElementsByName(elementName)：返回所有name为指定值的标签对象数组，顺序为在html页面中的顺序</li>
+</ul>
+<p>实例：对于一组选择框，设计全选，全不选和反选按钮，并且实现相关功能，并且检查最终提交是否至少选择一项。</p>
+<p><a href="./data/select.html">源码</a></p>
+<ul>
+<li>document.getElementsByTagName(tagname)：根据标签名返回标签对象集合，集合中都为dom对象，元素顺序为html页面中出现的顺序</li>
+<li>document.createElement(&quot;&quot;)：创建标签</li>
+</ul>
+<h4 id="节点常用的属性和方法dom数的操作方法"><a class="markdownIt-Anchor" href="#节点常用的属性和方法dom数的操作方法"></a> 节点常用的属性和方法（DOM数的操作方法）</h4>
+<ul>
+<li>childNodes：获取当前节点的所有子节点</li>
+<li>firstChild：当前节点的第一个子节点对象</li>
+<li>innerHTML：设置标签对象之间的内容</li>
+<li>appendChild：给指定标签添加子节点</li>
+</ul>
+<p>实例：通过JS代码在页面加载完成之后添加标签以及适当的内容</p>
+<p><a href="./data/generate.html">源码</a></p>
 
   
   
@@ -670,7 +929,7 @@
               
             
               
-                <p>本文永久链接是：<a href=http://codemajic.cn/post/b2c4.html>http://codemajic.cn/post/b2c4.html</a></p>
+                <p>本文永久链接是：<a href=http://codemajic.cn/post/a17a.html>http://codemajic.cn/post/a17a.html</a></p>
               
             
           </blockquote>
@@ -687,10 +946,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-14T22:26:17+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-18T22:15:03+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年10月14日</p>
+    <p>更新于：2020年10月18日</p>
   </a>
 </div>
 
@@ -699,7 +958,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/coding/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>coding</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Javascript/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Javascript</p></a></div>
 
 
         
@@ -712,7 +971,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://codemajic.cn/post/b2c4.html&title=code - Welcome to my blog!&summary=这是代码测试文章"
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://codemajic.cn/post/a17a.html&title=JS用法小记 - Welcome to my blog!&summary="
           
           >
           
@@ -724,7 +983,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://codemajic.cn/post/b2c4.html&title=code - Welcome to my blog!&summary=这是代码测试文章"
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://codemajic.cn/post/a17a.html&title=JS用法小记 - Welcome to my blog!&summary="
           
           >
           
@@ -736,7 +995,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://codemajic.cn/post/b2c4.html&title=code - Welcome to my blog!&summary=这是代码测试文章"
+          href="http://service.weibo.com/share/share.php?url=http://codemajic.cn/post/a17a.html&title=JS用法小记 - Welcome to my blog!&summary="
           
           >
           
@@ -766,14 +1025,19 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/post/9175.html'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>test_article</p>
-          <p class='content'>
-2020-10-14
-1234
-</p>
-        </a>
       
+        <a class='next' href='/post/198d.html'>
+          <p class='title'>CSS简单使用<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'> CSS
+
+层叠样式表单
+用于控制网页样式，并且和网页内容分离
+
+ HTML和CSS结合使用
+
+html中标签设置style属性，代码复用性差。
+在head中的style标签中定义网页中各类标签...</p>
+        </a>
       
     </div>
   
@@ -805,6 +1069,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript"><span class="toc-text"> JavaScript</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#html和js结合使用"><span class="toc-text"> html和JS结合使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#语法规则"><span class="toc-text"> 语法规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#变量类型"><span class="toc-text"> 变量类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#特殊值"><span class="toc-text"> 特殊值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件的注册绑定"><span class="toc-text"> 事件的注册(绑定)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dom模型文档对象模型"><span class="toc-text"> DOM模型（文档对象模型）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#节点常用的属性和方法dom数的操作方法"><span class="toc-text"> 节点常用的属性和方法（DOM数的操作方法）</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -821,7 +1099,7 @@
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="code";
+  pdata.postTitle="JS用法小记";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://codemajic.cn/"/>
-  <updated>2020-10-18T13:41:59.256Z</updated>
+  <updated>2020-10-18T14:15:03.827Z</updated>
   <id>http://codemajic.cn/</id>
   
   <author>
@@ -15,6 +15,98 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS用法小记</title>
+    <link href="http://codemajic.cn/post/a17a.html"/>
+    <id>http://codemajic.cn/post/a17a.html</id>
+    <published>2020-10-18T11:29:11.000Z</published>
+    <updated>2020-10-18T14:15:03.827Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;javascript&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#javascript&quot;&gt;&lt;/a&gt; JavaScript&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;动态网站&lt;/li&gt;
+&lt;li&gt;弱类型语言：变量类型可变&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Web开发" scheme="http://codemajic.cn/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Javascript" scheme="http://codemajic.cn/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS简单使用</title>
+    <link href="http://codemajic.cn/post/198d.html"/>
+    <id>http://codemajic.cn/post/198d.html</id>
+    <published>2020-10-16T11:48:44.000Z</published>
+    <updated>2020-10-18T14:17:35.468Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;css&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#css&quot;&gt;&lt;/a&gt; CSS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;层叠样式表单&lt;/li&gt;
+&lt;li&gt;用于控制网页样式，并且和网页内容分离&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Web开发" scheme="http://codemajic.cn/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="CSS" scheme="http://codemajic.cn/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML简单使用</title>
+    <link href="http://codemajic.cn/post/d562.html"/>
+    <id>http://codemajic.cn/post/d562.html</id>
+    <published>2020-10-16T11:10:35.000Z</published>
+    <updated>2020-10-18T14:17:53.976Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;html&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#html&quot;&gt;&lt;/a&gt; HTML&lt;/h3&gt;
+&lt;h4 id=&quot;html标签&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#html标签&quot;&gt;&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Web开发" scheme="http://codemajic.cn/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="HTML" scheme="http://codemajic.cn/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello hexo,hello world!</title>
@@ -40,56 +132,6 @@
     
     
       <category term="hexo" scheme="http://codemajic.cn/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test_article</title>
-    <link href="http://codemajic.cn/post/9175.html"/>
-    <id>http://codemajic.cn/post/9175.html</id>
-    <published>2020-10-14T12:53:21.000Z</published>
-    <updated>2020-10-14T14:26:02.211Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div class=&quot;timeline&quot;&gt;
-&lt;div class=&quot;timenode&quot;&gt;&lt;div class=&quot;meta&quot;&gt;&lt;p&gt;&lt;p&gt;2020-10-14&lt;/p&gt;
-&lt;/p&gt;&lt;/div&gt;&lt;div
-        
-      
-    
-    </summary>
-    
-    
-      <category term="test" scheme="http://codemajic.cn/categories/test/"/>
-    
-    
-      <category term="pic" scheme="http://codemajic.cn/tags/pic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>code</title>
-    <link href="http://codemajic.cn/post/b2c4.html"/>
-    <id>http://codemajic.cn/post/b2c4.html</id>
-    <published>2020-04-08T04:55:21.000Z</published>
-    <updated>2020-10-14T14:26:17.485Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是代码测试文章&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="tese" scheme="http://codemajic.cn/categories/tese/"/>
-    
-    
-      <category term="coding" scheme="http://codemajic.cn/tags/coding/"/>
     
   </entry>
   
