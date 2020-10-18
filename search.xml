@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>当前任务简要规划</title>
+      <link href="post/54ac.html"/>
+      <url>post/54ac.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="短期规划20201018"><a class="markdownIt-Anchor" href="#短期规划20201018"></a> 短期规划(2020.10.18)</h2><ul><li>DP论文研读,分析对比解析方法,以及创新点</li><li>DP模型代码阅读<ul><li>预料数据预处理(已完成)</li><li>模型数据流整理和模型解析方法(已完成)</li><li>模型性能评测(待解决)</li></ul></li></ul><h3 id="论文阅读"><a class="markdownIt-Anchor" href="#论文阅读"></a> 论文阅读</h3><p>​对于论文的阅读主要在于分析对比当前模型的创新之处,以及性能提升的要点,同时需要在阅读完成之后进行论文内容的个人整理和梳理.</p><ul><li>反复阅读</li><li>分析记录</li></ul><h3 id="coding"><a class="markdownIt-Anchor" href="#coding"></a> Coding</h3><p>​对于代码能力不仅在于模型的代码阅读,更重要的在于对于给定需求的实现,可通过Leetcode算法刷题进行代码能力的提升,同时对于当前篇章分析方向模型代码,需要仔细梳理数据维度的每一步转换,以及常规的解析做法.</p><ul><li>算法刷题</li><li>模型代码阅读</li></ul><h3 id="每日时间规划"><a class="markdownIt-Anchor" href="#每日时间规划"></a> 每日时间规划</h3><p>​规定时间的自律,胜过额外的增加时间.</p><p>7.30am : Get up</p><p>8.30~11.30 : Paper reading and algorithm practise</p><p>13:30~17:00 : Model</p><p>19:00~21:00 : Extra time!</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> DP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JS用法小记</title>
       <link href="post/a17a.html"/>
       <url>post/a17a.html</url>
